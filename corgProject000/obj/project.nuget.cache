@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "CkvGWUgox1SIs0OAZoCMLUb3lAfdhMdnKQ1A5kDDKEfd1iF+N8w4dEBs1s3TV00k7gevLWtkanDkHGaVaK/ojw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\MSI\\Desktop\\CorgAssemblyProject\\corgProject000\\corgProject000.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MSI\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

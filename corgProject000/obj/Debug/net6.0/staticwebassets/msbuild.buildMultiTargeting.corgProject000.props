@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\corgProject000.props" />
+</Project>

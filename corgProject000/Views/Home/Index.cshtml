@@ -1,0 +1,639 @@
+﻿@model corgProject000.ViewModels.indexViewModel
+<!DOCTYPE html>
+<html>
+<head>
+    <title> MIPSim </title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="~/twitter-bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/twitter-bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="~/twitter-bootstrap/js/bootstrap.esm.min.js"></script>
+    <script src="~/twitter-bootstrap/js/bootstrap.esm.js"></script>
+    <script src="~/twitter-bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/twitter-bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/css/alertify.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/css/themes/default.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/alertify.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="~/twitter-bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/jquery.jqgrid.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/free-jqgrid/4.15.5/i18n/grid.locale-en.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .code-editor {
+            padding: 10px;
+            font-family: monospace;
+            height: 300px;
+            overflow: hidden;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .line-numbers {
+            border: none;
+            background-color: transparent;
+            font-family: monospace;
+            resize: none;
+            padding: 0;
+            margin: 0;
+            margin-top: 1px;
+            padding-top: 10px;
+            width: 30px;
+            line-height: 2.1;
+            color: #aaa;
+            pointer-events: none;
+            font-size: 12px;
+            text-align: right;
+            white-space: pre;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+        }
+
+        .code-area {
+            height: 300px;
+            border-radius: 4px;
+            padding: 10px;
+            margin-left: 40px;
+        }
+
+        .instruction-table {
+            max-height: 350px;
+            overflow-y: auto;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+        .table-container {
+            margin-top: 20px;
+        }
+
+        .bottom-table {
+            margin-top: 20px;
+            overflow: auto;
+            max-height: 300px;
+        }
+
+            .bottom-table table {
+                margin-bottom: 0;
+            }
+
+            .bottom-table .table-container {
+                width: 100%;
+            }
+
+        .button-container {
+            margin-top: 10px;
+            text-align: right;
+        }
+
+            .button-container .btn {
+                margin-left: 10px;
+            }
+
+        .table-container.overflow-auto {
+            position: relative;
+        }
+
+            .table-container.overflow-auto::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            .table-container.overflow-auto::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            .table-container.overflow-auto::-webkit-scrollbar-thumb {
+                background: #888;
+                border-radius: 5px;
+            }
+
+                .table-container.overflow-auto::-webkit-scrollbar-thumb:hover {
+                    background: #555;
+                }
+
+        .table-bordered {
+            border-collapse: collapse;
+        }
+
+            .table-bordered th, .table-bordered td {
+                border: 1px solid #dee2e6;
+                padding: 8px;
+            }
+
+            .table-bordered thead th, .table-bordered thead td {
+                background-color: #f8f9fa;
+                border-bottom-width: 2px;
+            }
+
+            .table-bordered tbody + tbody {
+                border-top-width: 2px;
+            }
+
+        .fs-6 {
+            font-size: 0.875rem !important;
+        }
+
+        .bg-light {
+            background-color: #f8f9fa;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+        }
+
+            .btn:hover {
+                background-color: #0056b3;
+                color: #fff;
+            }
+
+            .btn:not(:disabled):not(.disabled).active,
+            .btn:not(:disabled):not(.disabled):active {
+                background-color: #0056b3;
+                color: #fff;
+                box-shadow: none;
+            }
+
+            .btn:focus {
+                box-shadow: none;
+            }
+
+            .btn:not(:disabled):not(.disabled).active:focus,
+            .btn:not(:disabled):not(.disabled):active:focus {
+                box-shadow: none;
+            }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-11">	<h1>MIPSim</h1></div>
+            <div class="col-1">	<p id="LineNumber"></p></div>
+		
+		
+        </div>
+
+        <div class="row">
+            <div class="col-8">
+                <div class="code-editor">
+                    <div class="line-numbers"></div>
+                 
+					<div class="code-area">
+						<textarea id="assembly-code" class="form-control" rows="10"></textarea>
+					</div>
+
+
+
+
+                </div>
+            </div>
+            <div class="col-4">
+                <p>Register Table</p>
+                <div class="instruction-table">
+                    <div class="table-container overflow-auto">
+                       
+                        <div id="RegisterTable"></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <p>Instruction Memory</p>
+                <div class="bottom-table">
+                    <div class="table-container overflow-auto">
+                        
+                        <div id="InstructionMemory"></div>          
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <p>Memory</p>
+                <div class="bottom-table">
+                    <div class="table-container overflow-auto">
+                     
+
+                        <div id="Memory">
+
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="AssemblyButton"class="btn">Assembly</button>
+            <button id="RunAllButton" class="btn">Run All</button>
+            <button id="AdimlaButton" class="btn">Adımla</button>
+        
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script>
+
+
+    var textarea = document.getElementById('assembly-code');
+    var lineNumbers;
+    var lineNumberCounter = 1;
+      var LineNumberPC;
+    textarea.addEventListener('input', updateLineNumbers);
+
+    function updateLineNumbers() {
+        var lines = textarea.value.split('\n');
+        var currentLineNumber = lines.length;
+
+        lineNumbers = currentLineNumber;
+        console.log(lineNumbers);
+    }
+ 
+
+
+
+
+
+
+
+
+    //Assembly Butonuna basıldığında
+    document.getElementById('AssemblyButton').addEventListener('click', function () {
+        var AssemblyCode = document.getElementById('assembly-code').value;
+        var IsClicked = 1;
+
+        $.ajax({
+            contentType: "application/x-www-form-urlencoded",
+            dataType: "json",
+            type: "POST",
+            url: "/Home/list/",
+            data: { isClicked: IsClicked, assemblyCode: AssemblyCode, LineNumbers: lineNumbers },
+            success: function (data) {
+                var tableHTML = "<table class='table table-bordered'>";
+
+                tableHTML += '<thead><tr><th>Name</th><th>Number</th><th>Value</th></tr></thead>';
+                tableHTML += '<tbody>';
+
+                for (var i = 0; i < data.registers.length; i++) {
+                    var register = data.registers[i];
+                    tableHTML += '<tr>';
+                    tableHTML += '<td>' + register.name + '</td>';
+                    tableHTML += '<td>' + register.number + '</td>';
+                    tableHTML += '<td>' + register.value + '</td>';
+                    tableHTML += '</tr>';
+                }
+                tableHTML += '</tbody>';
+                tableHTML += '</table>';
+                //console.log(data); veri geliyor sıkıntısız
+                $('#RegisterTable').html(tableHTML);
+
+                var tableHTML2 = "<table class='table table-bordered'>";
+                tableHTML2 += '<thead><tr><th>Name</th><th>Adres</th><th>Memory Value</th></tr></thead>';
+                tableHTML2 += '<tbody>';
+
+
+                for (var i = 0; i < data.instructionMemories.length; i++) {
+                    var instructionMemory = data.instructionMemories[i];
+                    tableHTML2 += '<tr>';
+                    tableHTML2 += '<td>' + instructionMemory.instructionName + '</td>';
+                    tableHTML2 += '<td>' + instructionMemory.address + '</td>';
+                    tableHTML2 += '<td>' + instructionMemory.memoryValue + '</td>';
+                    tableHTML2 += '</tr>';
+                }
+                tableHTML2 += '</tbody>';
+                tableHTML2 += '</table>';
+
+                $('#InstructionMemory').html(tableHTML2);
+
+                var tableHTML3 = "<table class='table table-bordered'>";
+                tableHTML3 += '<thead><tr><th>Memory Address</th><th>Value</th></tr></thead>';
+                tableHTML3 += '<tbody>';
+
+
+                for (var i = 0; i < data.instructionMemories.length; i++) {
+                    var Memory = data.dataMemories[i];
+                    tableHTML3 += '<tr>';
+                    tableHTML3 += '<td>' + Memory.address + '</td>';
+                    tableHTML3 += '<td>' + Memory.memoryValue + '</td>';
+                    tableHTML3 += '</tr>';
+                }
+                tableHTML3 += '</tbody>';
+                tableHTML3 += '</table>';
+
+                $('#Memory').html(tableHTML3);
+                console.log("başarılı")
+                //console.log(data); veride sıkıntı yok
+            }
+        });
+    });
+    
+
+    $(document).ready(function () { // projeyi çalıştırdığımızda tablolara  direkt veriyi çekiyoruz.
+        $.ajax({
+            url: "/Home/newe",
+            type: "GET",
+            dataType: "json",
+            success: function (data) {
+
+                // data değişkeni, JSON verisi olarak dönen tablo verisini içeriyor; içerisinde register,instruction memory ve normal memory var
+
+                var tableHTML = "<table class='table table-bordered'>";
+
+                tableHTML += '<thead><tr><th>Name</th><th>Number</th><th>Value</th></tr></thead>';
+                tableHTML += '<tbody>';
+
+                for (var i = 0; i < data.registers.length; i++) {
+                    var register = data.registers[i];
+                    tableHTML += '<tr>';
+                    tableHTML += '<td>' + register.name + '</td>';
+                    tableHTML += '<td>' + register.number + '</td>';
+                    tableHTML += '<td>' + register.value + '</td>';
+                    tableHTML += '</tr>';
+                }
+                tableHTML += '</tbody>';
+                tableHTML += '</table>';
+              //  console.log(data);
+                $('#RegisterTable').html(tableHTML);
+
+                var tableHTML2 = "<table class='table table-bordered'>";
+                tableHTML2 += '<thead><tr><th>Name</th><th>Adres</th><th>Memory Value</th></tr></thead>';
+                tableHTML2 += '<tbody>';
+
+
+                for (var i = 0; i < data.instructionMemories.length; i++) {
+                    var instructionMemory = data.instructionMemories[i];
+                    tableHTML2 += '<tr>';
+                    tableHTML2 += '<td>' + instructionMemory.instructionName + '</td>';
+                    tableHTML2 += '<td>' + instructionMemory.address + '</td>';
+                    tableHTML2 += '<td>' + instructionMemory.memoryValue + '</td>';
+                    tableHTML2 += '</tr>';
+                }
+                tableHTML2 += '</tbody>';
+                tableHTML2 += '</table>';
+
+                $('#InstructionMemory').html(tableHTML2);
+
+                var tableHTML3 = "<table class='table table-bordered'>";
+                tableHTML3 += '<thead><tr><th>Memory Address</th><th>Value</th></tr></thead>';
+                tableHTML3 += '<tbody>';
+
+
+                for (var i = 0; i < data.instructionMemories.length; i++) {
+                    var Memory = data.dataMemories[i];
+                    tableHTML3 += '<tr>';
+                    tableHTML3 += '<td>' + Memory.address + '</td>';
+                    tableHTML3 += '<td>' + Memory.memoryValue + '</td>';
+                    tableHTML3 += '</tr>';
+                }
+                tableHTML3 += '</tbody>';
+                tableHTML3 += '</table>';
+
+                $('#Memory').html(tableHTML3);
+            },
+            error: function () {
+                console.log('Beklenmeyen bir hata oluştu');
+
+            }
+        });
+    });
+    //RUN ALL Butonuna basıldığında
+    document.getElementById('RunAllButton').addEventListener('click', function () {
+        var AssemblyCode2 = document.getElementById('assembly-code').value;
+        var IsClicked = 1;
+
+        $.ajax({
+            url: "/Home/RunAll",
+            type: "GET",
+            dataType: "json",
+            data:{ assemblyCode: AssemblyCode2 },
+            success: function (data) {
+
+               
+
+                var tableHTML = "<table class='table table-bordered'>";
+
+                tableHTML += '<thead><tr><th>Name</th><th>Number</th><th>Value</th></tr></thead>';
+                tableHTML += '<tbody>';
+
+                for (var i = 0; i < data.registers.length; i++) {
+                    var register = data.registers[i];
+                    if (register.value != 0) {
+                        tableHTML += '<tr style="background-color: blue; color:white;">';
+                        tableHTML += '<td>' + register.name + '</td>';
+                        tableHTML += '<td>' + register.number + '</td>';
+                        tableHTML += '<td>' + register.value + '</td>';
+                        tableHTML += '</tr>';
+                    }
+                    else {
+                        tableHTML += '<tr>';
+                        tableHTML += '<td>' + register.name + '</td>';
+                        tableHTML += '<td>' + register.number + '</td>';
+                        tableHTML += '<td>' + register.value + '</td>';
+                        tableHTML += '</tr>';
+                    }
+                }
+                tableHTML += '</tbody>';
+                tableHTML += '</table>';
+              
+                $('#RegisterTable').html(tableHTML);
+
+                var tableHTML2 = "<table class='table table-bordered'>";
+                tableHTML2 += '<thead><tr><th>Name</th><th>Adres</th><th>Memory Value</th></tr></thead>';
+                tableHTML2 += '<tbody>';
+
+
+                for (var i = 0; i < data.instructionMemories.length; i++) {
+                    var instructionMemory = data.instructionMemories[i];
+                    tableHTML2 += '<tr>';
+                    tableHTML2 += '<td>' + instructionMemory.instructionName + '</td>';
+                    tableHTML2 += '<td>' + instructionMemory.address + '</td>';
+                    tableHTML2 += '<td>' + instructionMemory.memoryValue + '</td>';
+                    tableHTML2 += '</tr>';
+                }
+                tableHTML2 += '</tbody>';
+                tableHTML2 += '</table>';
+
+                $('#InstructionMemory').html(tableHTML2);
+
+                var tableHTML3 = "<table class='table table-bordered'>";
+                tableHTML3 += '<thead><tr><th>Memory Address</th><th>Value</th></tr></thead>';
+                tableHTML3 += '<tbody>';
+
+
+                for (var i = 0; i < data.instructionMemories.length; i++) {
+                    var Memory = data.dataMemories[i];
+                    if (Memory.memoryValue != 0) {
+                        tableHTML3 += '<tr style="background-color: blue; color:white;">';
+                        tableHTML3 += '<td>' + Memory.address + '</td>';
+                        tableHTML3 += '<td>' + Memory.memoryValue + '</td>';
+                        tableHTML3 += '</tr>';
+                    }
+                    else {
+                        tableHTML3 += '<tr>';
+                        tableHTML3 += '<td>' + Memory.address + '</td>';
+                        tableHTML3 += '<td>' + Memory.memoryValue + '</td>';
+                        tableHTML3 += '</tr>';
+                    }
+                }
+                tableHTML3 += '</tbody>';
+                tableHTML3 += '</table>';
+
+                $('#Memory').html(tableHTML3);
+                console.log("Burası Run All");
+                console.log(data);
+            },
+            error: function () {
+                console.log('Beklenmeyen bir hata oluştu');
+
+            }
+        });
+    });
+
+    //Adım adım kısmı
+
+    document.getElementById('AdimlaButton').addEventListener('click', function () {
+        var AssemblyCode2 = document.getElementById('assembly-code').value;
+        var IsClicked = 1;
+        var LineNumberPC=0;
+        if(lineNumberCounter<=lineNumbers){
+            lineNumberCounter += 1;
+        }
+    
+        $.ajax({
+            url: "/Home/RunStepByStep",
+            type: "GET",
+            dataType: "json",
+            data: { assemblyCode: AssemblyCode2 },
+            success: function (data) {
+
+              
+             
+
+                var tableHTML = "<table class='table table-bordered'>";
+
+                tableHTML += '<thead><tr><th>Name</th><th>Number</th><th>Value</th></tr></thead>';
+                tableHTML += '<tbody>';
+
+                for (var i = 0; i < data.registers.length; i++) {
+                   
+                    var register = data.registers[i];
+              
+
+                    if (register.value != 0) {
+                        tableHTML += '<tr style="background-color: blue; color:white;">';
+                        tableHTML += '<td>' + register.name + '</td>';
+                        tableHTML += '<td>' + register.number + '</td>';
+                        tableHTML += '<td>' + register.value + '</td>';
+                        tableHTML += '</tr>';
+                        if(register.number==32){
+                            LineNumberPC=register.value;
+                            LineNumberPC = parseInt(LineNumberPC,16);
+                        }
+
+                           
+
+                    }
+                    else {
+                        tableHTML += '<tr>';
+                        tableHTML += '<td>' + register.name + '</td>';
+                        tableHTML += '<td>' + register.number + '</td>';
+                        tableHTML += '<td>' + register.value + '</td>';
+                        tableHTML += '</tr>';
+                    }
+
+
+             
+                }
+                tableHTML += '</tbody>';
+                tableHTML += '</table>';
+
+                $('#RegisterTable').html(tableHTML);
+                document.getElementById("LineNumber").style.display = "block";
+                document.getElementById("LineNumber").innerText = "Line: " + LineNumberPC;
+                var tableHTML2 = "<table class='table table-bordered'>";
+                tableHTML2 += '<thead><tr><th>Name</th><th>Adres</th><th>Memory Value</th></tr></thead>';
+                tableHTML2 += '<tbody>';
+
+
+                for (var i = 0; i < data.instructionMemories.length; i++) {
+                    var instructionMemory = data.instructionMemories[i];
+
+
+                    tableHTML2 += '<tr>';
+                    tableHTML2 += '<td>' + instructionMemory.instructionName + '</td>';
+                    tableHTML2 += '<td>' + instructionMemory.address + '</td>';
+                    tableHTML2 += '<td>' + instructionMemory.memoryValue + '</td>';
+                    tableHTML2 += '</tr>';
+                }
+                tableHTML2 += '</tbody>';
+                tableHTML2 += '</table>';
+
+                $('#InstructionMemory').html(tableHTML2);
+
+                var tableHTML3 = "<table class='table table-bordered'>";
+                tableHTML3 += '<thead><tr><th>Memory Address</th><th>Value</th></tr></thead>';
+                tableHTML3 += '<tbody>';
+
+
+                for (var i = 0; i < data.instructionMemories.length; i++) {
+                    var Memory = data.dataMemories[i];
+                    
+                    if(Memory.memoryValue!=0){
+                        tableHTML3 += '<tr style="background-color: blue; color:white;">';
+                        tableHTML3 += '<td>' + Memory.address + '</td>';
+                        tableHTML3 += '<td>' + Memory.memoryValue + '</td>';
+                        tableHTML3 += '</tr>';
+                    }
+                    else{
+                    tableHTML3 += '<tr>';
+                    tableHTML3 += '<td>' + Memory.address + '</td>';
+                    tableHTML3 += '<td>' + Memory.memoryValue + '</td>';
+                    tableHTML3 += '</tr>';
+                    }
+
+       
+                }
+                tableHTML3 += '</tbody>';
+                tableHTML3 += '</table>';
+
+                $('#Memory').html(tableHTML3);
+                console.log("Burası Run All");
+                console.log(data);
+            },
+            error: function () {
+                console.log('Beklenmeyen bir hata oluştu');
+
+            }
+        });
+    });
+
+    document.getElementById("LineNumber").style.display = "none";
+
+
+</script>
+
+

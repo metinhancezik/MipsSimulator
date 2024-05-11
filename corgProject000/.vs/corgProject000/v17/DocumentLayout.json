@@ -1,0 +1,270 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\MSI\\Desktop\\CorgAssemblyProject\\corgProject000\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1A98627F-CD41-46FA-82B8-5F03B75981FD}|corgProject000.csproj|c:\\users\\msi\\desktop\\corgassemblyproject\\corgproject000\\models\\dmtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A98627F-CD41-46FA-82B8-5F03B75981FD}|corgProject000.csproj|solutionrelative:models\\dmtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A98627F-CD41-46FA-82B8-5F03B75981FD}|corgProject000.csproj|c:\\users\\msi\\desktop\\corgassemblyproject\\corgproject000\\models\\imtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A98627F-CD41-46FA-82B8-5F03B75981FD}|corgProject000.csproj|solutionrelative:models\\imtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A98627F-CD41-46FA-82B8-5F03B75981FD}|corgProject000.csproj|c:\\users\\msi\\desktop\\corgassemblyproject\\corgproject000\\models\\rtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A98627F-CD41-46FA-82B8-5F03B75981FD}|corgProject000.csproj|solutionrelative:models\\rtable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A98627F-CD41-46FA-82B8-5F03B75981FD}|corgProject000.csproj|c:\\users\\msi\\desktop\\corgassemblyproject\\corgproject000\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A98627F-CD41-46FA-82B8-5F03B75981FD}|corgProject000.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A98627F-CD41-46FA-82B8-5F03B75981FD}|corgProject000.csproj|c:\\users\\msi\\desktop\\corgassemblyproject\\corgproject000\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1A98627F-CD41-46FA-82B8-5F03B75981FD}|corgProject000.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A98627F-CD41-46FA-82B8-5F03B75981FD}|corgProject000.csproj|c:\\users\\msi\\desktop\\corgassemblyproject\\corgproject000\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A98627F-CD41-46FA-82B8-5F03B75981FD}|corgProject000.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MSI\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\MemoryController\\MemoryController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MSI\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\MemoryController\\MemoryTypes\\Memory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MSI\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\MemoryController\\MemoryTypes\\DataMemory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MSI\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\FunctionController\\Functions\\RType\\RTypeFunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MSI\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\InstructionController\\InstructionController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MSI\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\BusinessLayers\\ProjectController\\ProjeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MSI\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\FunctionController\\FunctionController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DMTable.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\CorgAssemblyProject\\corgProject000\\Models\\DMTable.cs",
+              "RelativeDocumentMoniker": "Models\\DMTable.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\CorgAssemblyProject\\corgProject000\\Models\\DMTable.cs",
+              "RelativeToolTip": "Models\\DMTable.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAAB8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:47:46.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IMTable.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\CorgAssemblyProject\\corgProject000\\Models\\IMTable.cs",
+              "RelativeDocumentMoniker": "Models\\IMTable.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\CorgAssemblyProject\\corgProject000\\Models\\IMTable.cs",
+              "RelativeToolTip": "Models\\IMTable.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABwAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:47:33.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RTable.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\CorgAssemblyProject\\corgProject000\\Models\\RTable.cs",
+              "RelativeDocumentMoniker": "Models\\RTable.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\CorgAssemblyProject\\corgProject000\\Models\\RTable.cs",
+              "RelativeToolTip": "Models\\RTable.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:47:09.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MemoryController.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\MemoryController\\MemoryController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\MemoryController\\MemoryController.cs",
+              "ToolTip": "C:\\Users\\MSI\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\MemoryController\\MemoryController.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\MemoryController\\MemoryController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:43:13.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\CorgAssemblyProject\\corgProject000\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\CorgAssemblyProject\\corgProject000\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:43:10.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Memory.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\MemoryController\\MemoryTypes\\Memory.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\MemoryController\\MemoryTypes\\Memory.cs",
+              "ToolTip": "C:\\Users\\MSI\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\MemoryController\\MemoryTypes\\Memory.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\MemoryController\\MemoryTypes\\Memory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBQAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:42:25.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DataMemory.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\MemoryController\\MemoryTypes\\DataMemory.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\MemoryController\\MemoryTypes\\DataMemory.cs",
+              "ToolTip": "C:\\Users\\MSI\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\MemoryController\\MemoryTypes\\DataMemory.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\MemoryController\\MemoryTypes\\DataMemory.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:42:12.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\CorgAssemblyProject\\corgProject000\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\CorgAssemblyProject\\corgProject000\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAuwGYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:20:32.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\MSI\\Desktop\\CorgAssemblyProject\\corgProject000\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\MSI\\Desktop\\CorgAssemblyProject\\corgProject000\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAALwBAAAAAAAAAAAAAMgBAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-09T14:19:12.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RTypeFunctions.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\FunctionController\\Functions\\RType\\RTypeFunctions.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\FunctionController\\Functions\\RType\\RTypeFunctions.cs",
+              "ToolTip": "C:\\Users\\MSI\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\FunctionController\\Functions\\RType\\RTypeFunctions.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\FunctionController\\Functions\\RType\\RTypeFunctions.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAiwEkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:19:12.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "InstructionController.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\InstructionController\\InstructionController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\InstructionController\\InstructionController.cs",
+              "ToolTip": "C:\\Users\\MSI\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\InstructionController\\InstructionController.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\InstructionController\\InstructionController.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAuwF0AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:19:12.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProjeController.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\BusinessLayers\\ProjectController\\ProjeController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\BusinessLayers\\ProjectController\\ProjeController.cs",
+              "ToolTip": "C:\\Users\\MSI\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\BusinessLayers\\ProjectController\\ProjeController.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\BusinessLayers\\ProjectController\\ProjeController.cs",
+              "ViewState": "AQIAAMUAAAAAAAAAAAAqwNUAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:19:12.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FunctionController.cs",
+              "DocumentMoniker": "C:\\Users\\MSI\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\FunctionController\\FunctionController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\FunctionController\\FunctionController.cs",
+              "ToolTip": "C:\\Users\\MSI\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\FunctionController\\FunctionController.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\CorgAssemblyProject\\CorgAssemblyProject\\EntityLayers\\FunctionController\\FunctionController.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAA7wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:19:12.905Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
