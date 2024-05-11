@@ -1,0 +1,15 @@
+addi $t0, $zero, 7    
+addi $t1, $zero, 5     
+and $t2, $t0, $t1       
+ori $t3, $t0, 54 
+sw $t0, 0($t1)
+lw $t7, 0($t1)
+jal multislem         
+add $t4, $t0, $t1     
+addi $v0, $zero, 10
+j Exit  
+multislem:              
+mult $t5, $t0, $t1      
+add $t6, $t5, $t4       
+jr $ra         
+Exit:
